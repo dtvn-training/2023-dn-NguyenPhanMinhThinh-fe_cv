@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h3 {
+  color: #FFB313;
+  margin: 10px 0;
+  font-size: 1.25em;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition-duration: 0.3s;
+}
+
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  background-color: #1A237E;
+  display: grid;
+  grid-template-columns: 230px 2fr;
+}
+
+.container .left_side {
+  position: relative;
+  background: #283593;
+}
+
+.container .right_side {
+  position: relative;
+}
+
+.profile {
+  background: #FFB300;
+  width: 100%;
+  min-height: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.profile::after {
+  content: "";
+  position: absolute;
+  background-color: #303F9F;
+  width: 100%;
+  height: 30px;
+  bottom: -15px;
+  left: 0;
+  transform: skewY(-5deg);
+  z-index: -1;
+}
+
+.profile .photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.profile .photo img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.profile .info {
+  text-align: center;
+}
+
+.profile .info .name {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 1.75em;
+}
+
+.profile .info .job {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 1.5em;
+}
+
+.information {
+  padding: 0 10px;
+}
+
+.about {
+  position: relative;
+  padding-top: 30px;
+}
+.about p {
+  color: #fff;
+}
+
+.contact ul {
+  position: relative;
+}
+
+.contact ul li {
+  line-height: 24px;
+  position: relative;
+  list-style: none;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.contact ul li a {
+  position: relative;
+}
+.contact ul li:hover i{
+  color:#fdd835;
+}
+
+.contact ul li:hover a{
+  color:#fdd835;
+}
+
+.contact ul li:hover a::after {
+  color:#fdd835;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.contact ul a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 0;
+  background-color: #fdd835;
+}
+
+.contact i {
+  color: #FFB300;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  margin-right: 15px;
+  transition-duration: 0.3s;
+}
+
+.follow .box {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.follow .box i {
+  width: 60px;
+  height: 60px;
+  color: #1A237E;
+  background: #FFB300;
+  border-radius: 50%;
+  font-size: 25px;
+  text-align: center;
+  margin: 0 10px 10px 0;
+  line-height: 60px;
+  transition-duration: 0.3s;
+}
+
+.follow .box a:hover i {
+  background: #fdd835;
+  border-radius: 5px;
+  transform: rotate(45deg) scale(0.8);
+  transition-duration: 0.3s;
+}
+
